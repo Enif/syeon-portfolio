@@ -11,6 +11,10 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        eescape: {
+          primary: "#8094FF",
+          secondary: "#CDD5FF",
+        },
       },
     },
   },
