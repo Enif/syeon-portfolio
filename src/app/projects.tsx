@@ -33,7 +33,7 @@ const projects: Project[] = [{
   image: "/home/projects/minterior_thumbnail.jpg",
   title: "MindTerior",
   date: "(2022-2023)",
-  authors: <>Ain Lee, Juhyun Lee, <strong>xSooyeon Ahn</strong>, Youngik Lee  <span className="text-[10px]">*All contributed <strong>equally</strong> to this work.</span></>,
+  authors: <>Ain Lee, Juhyun Lee, <strong>Sooyeon Ahn</strong>, Youngik Lee  <span className="text-[10px]">*All contributed <strong>equally</strong> to this work.</span></>,
   description: "MindTerior is a mental health care game for people with mild emotional difficulties. It analyzes each	player's emotional state and shows the results as visual elements in the game space. It also suggests a gamified evidence-based mental health care activity that allows players to cope with their emotional problems.",
   attachment: "/home/projects/EE-SCAPE.pdf",
   link: <>Link to <ExternalLink href="https://dl.acm.org/doi/10.1145/3544549.3583831">Publication</ExternalLink>, <ExternalLink href="https://www.youtube.com/watch?v=k9af8ILsWTY">Video</ExternalLink></>

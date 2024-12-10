@@ -6,7 +6,7 @@ export default function Contact() {
         If you have any questions or want to collaborate with me, please feel free to contact me.
       </p>
       <div className="border border-main-navy rounded-3xl text-xl px-10 py-2">
-        <a href="mailto:syeon.desin@gmail.com">Email to Sooyeon</a>
+        <a href="mailto:syeon.design@gmail.com">Email to Sooyeon</a>
       </div>
     </div>
   );

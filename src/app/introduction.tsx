@@ -38,7 +38,7 @@ export default function Introduction() {
         </p>
 
         <div className="flex gap-3">
-          <a href="mailto:syeon_desing@gmail.com"><Image src='/home/icons/mail.svg' alt="mail" width={30} height={30} /></a>
+          <a href="mailto:syeon.design@gmail.com "><Image src='/home/icons/mail.svg' alt="mail" width={30} height={30} /></a>
           <button><Image src='/home/icons/cv.svg' alt="cv" width={30} height={30} /></button>
           <ExternalLink href="https://www.instagram.com/syeon.artist/"><Image src='/home/icons/instagram.svg' alt="instagram" width={30} height={30} /></ExternalLink>
         </div>
