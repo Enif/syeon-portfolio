@@ -55,7 +55,7 @@ export default function Artworks() {
   return (
     <div id="artworks" className="flex justify-center">
       <div className="w-[1052px] flex flex-col gap-11">
-        <h2 className="text-main-navy text-3xl mb-10 font-extrabold tracking-widest">Projects</h2>
+        <h2 className="text-main-navy text-3xl mb-10 font-extrabold tracking-widest">ARTWORKS</h2>
         {
           artworks.map((artwork) => (
             <div key={artwork.title} className="relative group">
