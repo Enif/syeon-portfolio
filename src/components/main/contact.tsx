@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-5 text-main-navy pb-20">
+    <div id="contact" className="w-full flex flex-col justify-center items-center gap-5 text-main-navy pb-20">
       <h2 className=" text-[1.75rem] font-extrabold">CONTACT</h2>
       <p className="text-xl mb-10">
         If you have any questions, feel free to contact me.
