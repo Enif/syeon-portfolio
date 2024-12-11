@@ -22,7 +22,7 @@ const artworks: Artwork[] = [{
                 When the shadow of New God casts, the Earth is distorted.”
                 Meta-Gaia visually explores the profound impact of human activities on Earth's ecosystems.
                 It gracefully immerses viewers in a meditative and thought-provoking experience.`,
-  details: [],
+  details: [{ type: 'video', src: 'https://www.youtube.com/embed/_T8dzd3eagU?si=gi-uX96dY9ggQnDS&amp;controls=0', alt: 'Meta-Gaia Video' }],
 }, {
   mainImage: "/home/artworks/boundary.jpg",
   title: "Boundary Project",

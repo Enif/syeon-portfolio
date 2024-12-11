@@ -24,7 +24,7 @@ export default function ArtworkDetail({ artworkDetails }: Props) {
         <ChevronLeft />
       </button>
       {currentDetail.type === 'image' && <Image src={currentDetail.src} alt={currentDetail.alt} width={1320} height={915} />}
-      {currentDetail.type === 'video' && <video src={currentDetail.src} autoPlay />}
+      {currentDetail.type === 'video' && <iframe src={currentDetail.src} width={1320} height={915} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />}
       <button className="border-2 border-main-gray text-main-gray disabled:border-main-gray100 disabled:text-main-gray100 w-[62px] h-[62px] rounded-full flex justify-center items-center" onClick={() => setCurrentDetailIndex(currentDetailIndex + 1)} disabled={!canMoveNext}>
         <ChevronRight />
       </button>
