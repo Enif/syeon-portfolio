@@ -29,7 +29,27 @@ const artworks: Artwork[] = [{
   description: `My self had separated into two distinct selves: the outer self and the inner self.
                 The Boundary Project is the process of accepting both divided selves as part of me
                 and eventually integrating them into one.`,
-  details: [],
+  details: [{
+    type: 'video',
+    src: 'https://www.youtube.com/embed/kBk8lsMYHSE?si=_orlbUPE83O8FgHH',
+    alt: 'Boundary Detail 1'
+  }, {
+    type: 'image',
+    src: '/home/artworks/boundary_detail_2.jpg',
+    alt: 'Boundary Detail 2'
+  }, {
+    type: 'image',
+    src: '/home/artworks/boundary_detail_3.jpg',
+    alt: 'Boundary Detail 3'
+  }, {
+    type: 'image',
+    src: '/home/artworks/boundary_detail_4.jpg',
+    alt: 'Boundary Detail 4'
+  }, {
+    type: 'image',
+    src: '/home/artworks/boundary_detail_5.jpg',
+    alt: 'Boundary Detail 5'
+  }],
 
 }, {
   mainImage: "/home/artworks/inner_garden.jpg",
@@ -38,7 +58,27 @@ const artworks: Artwork[] = [{
                 The ‘Inner Garden’ is an inner cozy space where I am able to meet my own inner self.
                 My each inner self has been submerged in each room keeping with my hidden depression
                 as a hard but soft stone, a faint but sparkling light, and a parched but living tree.`,
-  details: [],
+  details: [{
+    type: 'video',
+    src: 'https://www.youtube.com/embed/krZfeE0pm5U?si=PGr0YdliQ6Ehf31M',
+    alt: 'Inner Garden Detail 1'
+  }, {
+    type: 'image',
+    src: '/home/artworks/inner_garden_detail_2.jpg',
+    alt: 'Inner Garden Detail 2'
+  }, {
+    type: 'image',
+    src: '/home/artworks/inner_garden_detail_3.jpg',
+    alt: 'Inner Garden Detail 3'
+  }, {
+    type: 'image',
+    src: '/home/artworks/inner_garden_detail_4.jpg',
+    alt: 'Inner Garden Detail 4'
+  }, {
+    type: 'image',
+    src: '/home/artworks/inner_garden_detail_5.jpg',
+    alt: 'Inner Garden Detail 5'
+  }],
 }, {
   mainImage: "/home/artworks/remember.jpg",
   title: "Remember Project",
@@ -46,7 +86,39 @@ const artworks: Artwork[] = [{
                 At his last moment, I was afraid of forgetting about him forever if I didn’t leave him in the picture.
                 <Remember Project> is a project starting from my regret of not leaving my grandfather’s
                 last in the picture, to try to remember him in a different way.`,
-  details: [],
+  details: [{
+    type: 'image',
+    src: '/home/artworks/remember_detail_1.jpg',
+    alt: 'Remember Detail 1'
+  }, {
+    type: 'video',
+    src: 'https://www.youtube.com/embed/T0rVGgqVhUg?si=R8SvBH-FLuERUO54',
+    alt: 'Remember Detail 2'
+  }, {
+    type: 'image',
+    src: '/home/artworks/remember_detail_3.jpg',
+    alt: 'Remember Detail 3'
+  }, {
+    type: 'video',
+    src: 'https://www.youtube.com/embed/YdOBrPByhXE?si=Jg5CREw5CXfKDG0-',
+    alt: 'Remember Detail 4'
+  }, {
+    type: 'image',
+    src: '/home/artworks/remember_detail_5.jpg',
+    alt: 'Remember Detail 5'
+  }, {
+    type: 'image',
+    src: '/home/artworks/remember_detail_6.jpg',
+    alt: 'Remember Detail 6'
+  }, {
+    type: 'image',
+    src: '/home/artworks/remember_detail_7.jpg',
+    alt: 'Remember Detail 7'
+  }, {
+    type: 'image',
+    src: '/home/artworks/remember_detail_8.jpg',
+    alt: 'Remember Detail 8'
+  }],
 
 }, {
   mainImage: "/home/artworks/the_gap.jpg",
@@ -55,7 +127,35 @@ const artworks: Artwork[] = [{
                 My closest others(friends and family) and I stand face to face, and there is a thin, white fabric between us.
                 We sew a Korean word, ‘틈,’ which means a gap, to visualize a space where we felt for each other on white fabric. 
                 The gap is a space where sometimes is been apart, sometimes is been closely, and sometimes is been in a tangle.`,
-  details: [{ type: 'image', src: '/home/artworks/the_gap_detail_1.jpg', alt: 'The Gap Detail 1' }],
+  details: [{
+    type: 'image',
+    src: '/home/artworks/the_gap_detail_1.jpg',
+    alt: 'The Gap Detail 1'
+  }, {
+    type: 'image',
+    src: '/home/artworks/the_gap_detail_2.jpg',
+    alt: 'The Gap Detail 2'
+  }, {
+    type: 'image',
+    src: '/home/artworks/the_gap_detail_3.jpg',
+    alt: 'The Gap Detail 3'
+  }, {
+    type: 'image',
+    src: '/home/artworks/the_gap_detail_4.jpg',
+    alt: 'The Gap Detail 4'
+  }, {
+    type: 'image',
+    src: '/home/artworks/the_gap_detail_5.jpg',
+    alt: 'The Gap Detail 5'
+  }, {
+    type: 'image',
+    src: '/home/artworks/the_gap_detail_6.jpg',
+    alt: 'The Gap Detail 6'
+  }, {
+    type: 'image',
+    src: '/home/artworks/the_gap_detail_7.jpg',
+    alt: 'The Gap Detail 7'
+  }],
 }, {
   mainImage: '/home/artworks/not_to_be_erased.jpg',
   title: 'Not to be Erased',
@@ -63,7 +163,23 @@ const artworks: Artwork[] = [{
                   History do not record them even if each of them has their own valuable and precious.
                   In the ‘Not to be Erased,’ I tried to express the pain of about 352,862 people
                   disappeared by the war as inscribing them one by one with my hands.`,
-  details: [],
+  details: [{
+    type: 'image',
+    src: '/home/artworks/not_to_be_erased_detail_1.jpg',
+    alt: 'Not to be Erased Detail 1'
+  }, {
+    type: 'image',
+    src: '/home/artworks/not_to_be_erased_detail_2.jpg',
+    alt: 'Not to be Erased Detail 2'
+  }, {
+    type: 'image',
+    src: '/home/artworks/not_to_be_erased_detail_3.jpg',
+    alt: 'Not to be Erased Detail 3'
+  }, {
+    type: 'image',
+    src: '/home/artworks/not_to_be_erased_detail_4.jpg',
+    alt: 'Not to be Erased Detail 4'
+  }],
 }]
 
 export default function Artworks() {
