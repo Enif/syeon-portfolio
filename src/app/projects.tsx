@@ -60,7 +60,7 @@ const projects: Project[] = [{
   authors: <><strong>Sooyeon Ahn</strong>, Youngjae Kim, Doeun Kim, Seojin Park, Seungyun Oh, Minha Kang, Wootae Kim</>,
   description: "For the STARved is an astrophotography exhibition held in an online 3D virtual space. It allows	people starved of stars due to the pandemic to freely explore beautiful and fantastic galleries and watch astrophotographs taken by club members.",
   attachment: "/home/projects/EE-SCAPE.pdf",
-  link: <> Link to <ExternalLink href="https://exhibition39.snuaaa.net/">For the STARved</ExternalLink>, <ExternalLink href="https://www.red-dot.org/ko/project/for-the-starved-61090">Red Dot 2022</ExternalLink>, <ExternalLink href="https://www.youtube.com/watch?v=fyozL9qou4w">Video</ExternalLink></>
+  link: <>Link to <ExternalLink href="https://exhibition39.snuaaa.net/">For the STARved</ExternalLink>, <ExternalLink href="https://www.red-dot.org/ko/project/for-the-starved-61090">Red Dot 2022</ExternalLink>, <ExternalLink href="https://www.youtube.com/watch?v=fyozL9qou4w">Video</ExternalLink></>
 }]
 
 
