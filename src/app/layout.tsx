@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { nanumSquare } from "./fonts";
+import { nanumSquare } from "~/app/fonts";
 
 
 export const metadata: Metadata = {

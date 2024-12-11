@@ -1,12 +1,11 @@
 import Image from "next/image";
-import Header from "./header";
-import Introduction from "./introduction";
-import News from "./news";
-import Projects from "./projects";
-import Artworks from "./artworks";
-import Contact from "./contact";
+import Header from "~/components/main/header";
+import Introduction from "~/components/main/introduction";
+import News from "~/components/main/news";
+import Projects from "~/components/main/projects";
+import Artworks from "~/components/main/artworks";
+import Contact from "~/components/main/contact";
 
-// style={{ objectFit: "cover", display: "block" }}
 export default function Home() {
   return (
     <div>

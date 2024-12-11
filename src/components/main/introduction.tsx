@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import ExternalLink from "~/components/externalLink";
-import { nanumMyeongjo } from "./fonts";
+import { nanumMyeongjo } from "~/app/fonts";
 
 export default function Introduction() {
   return (

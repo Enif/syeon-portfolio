@@ -31,3 +31,4 @@ export default function ArtworkDetail({ artworkDetails }: Props) {
     </div>
   );
 }
+
