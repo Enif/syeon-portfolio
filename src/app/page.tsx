@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="w-full flex flex-col gap-20 pt-32">
+      <div className="w-full flex flex-col gap-32 pt-32">
         <Introduction />
         <Image src="/home/divider.png" alt="divider" width={1350} height={60} className="mb-10" />
         <News />
@@ -20,6 +20,9 @@ export default function Home() {
         </div>
         <Projects />
         <Artworks />
+        <div className="flex w-full justify-center mt-10">
+          <Image src="/home/divider_center.png" alt="divider" width={1350} height={60} />
+        </div>
         <Contact />
         <Footer />
       </div>

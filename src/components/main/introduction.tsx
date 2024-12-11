@@ -6,17 +6,17 @@ import { nanumMyeongjo } from "~/app/fonts";
 export default function Introduction() {
   return (
 
-    <div className="w-full flex flex-col items-center gap-10">
+    <div className="w-full flex flex-col items-center gap-28">
       <Image src="/home/signature.png" alt="signature" width={1920} height={600} priority className="w-full max-w-[1920px] transform scale-[105%]" />
 
       <div className={`${nanumMyeongjo.className} text-main-gray relative`}>
-        <Image src='/home/icons/left_double_quotation.svg' alt="left_double_quotation" width={30} height={30} className="absolute -left-8 top-0 text-red-50" />
-        <Image src='/home/icons/right_double_quotation.svg' alt="right_double_quotation" width={30} height={30} className="absolute -right-8 top-0" />
-        <h2 className="text-[1.75rem] mb-10 font-extrabold text-center">
+        <Image src='/home/icons/left_double_quotation.svg' alt="left_double_quotation" width={18} height={18} className="absolute -left-8 top-0 text-red-50" />
+        <Image src='/home/icons/right_double_quotation.svg' alt="right_double_quotation" width={18} height={18} className="absolute -right-8 top-0" />
+        <h2 className="text-[1.75rem] mb-10 font-light text-center">
           Visible things can be invisible.<br />
           However, our powers of thought grasp both the visible and the invisible.
         </h2>
-        <p className="text-xl text-center font-bold">
+        <p className="text-xl text-center font-light">
           - Rene Magritte -
         </p>
       </div>
@@ -38,7 +38,7 @@ export default function Introduction() {
         </p>
 
         <div className="flex gap-3">
-          <a href="mailto:syeon.design@gmail.com "><Image src='/home/icons/mail.svg' alt="mail" width={30} height={30} /></a>
+          <a href="mailto:syeon.studio@gmail.com" className="flex items-center"><Image src='/home/icons/mail.svg' alt="mail" width={30} height={30} /></a>
           <button><Image src='/home/icons/cv.svg' alt="cv" width={30} height={30} /></button>
           <ExternalLink href="https://www.instagram.com/syeon.artist/"><Image src='/home/icons/instagram.svg' alt="instagram" width={30} height={30} /></ExternalLink>
         </div>

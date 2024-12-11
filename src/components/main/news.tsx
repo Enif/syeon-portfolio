@@ -94,7 +94,7 @@ export default function News() {
       <div id="about" className="flex justify-center mb-10">
         <div className="w-[1052px]">
           <h2 className="text-main-navy text-3xl mb-10 font-extrabold tracking-widest">NEWS</h2>
-          <div className="grid grid-cols-4 gap-5">
+          <div className="grid grid-cols-4 gap-5 gap-y-8">
             {
               newsInfo.slice(0, maxVisible).map((news, index) => (
                 <div key={index} className="flex flex-col gap-4">
