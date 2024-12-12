@@ -87,7 +87,7 @@ export default function Projects() {
                 </div>
               </div>
               <div className="shrink-0">
-                <Image src={project.image} alt={project.title} width={515} height={350} className="object-cover" placeholder="blur" />
+                <Image src={project.image} alt={project.title} width={515} height={350} className="object-cover" />
               </div>
             </div>
           ))

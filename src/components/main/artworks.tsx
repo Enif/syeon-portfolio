@@ -193,7 +193,7 @@ export default function Artworks() {
         {
           artworks.map((artwork) => (
             <div key={artwork.title} className="relative group">
-              <Image src={artwork.mainImage} width={1052} height={450} alt={artwork.title} placeholder="blur" />
+              <Image src={artwork.mainImage} width={1052} height={450} alt={artwork.title} />
               <div className="absolute inset-0 flex flex-col justify-center items-center gap-4 px-28 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white">
                 <h3 className="text-[2rem] font-extrabold">{artwork.title}</h3>
                 {artwork.authors && <p className="text-xs">{artwork.authors}</p>}
