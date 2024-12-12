@@ -40,7 +40,7 @@ export default function Introduction() {
         <div className="flex gap-3">
           <a href="mailto:syeon.studio@gmail.com" className="flex items-center"><Image src='/home/icons/mail.svg' alt="mail" width={30} height={30} /></a>
           <button><Image src='/home/icons/cv.svg' alt="cv" width={30} height={30} /></button>
-          <ExternalLink href="https://www.instagram.com/syeon.artist/"><Image src='/home/icons/instagram.svg' alt="instagram" width={30} height={30} /></ExternalLink>
+          <ExternalLink href="https://www.instagram.com/syeon.artist/"><Image src='/home/icons/sns.svg' alt="sns" width={30} height={30} /></ExternalLink>
         </div>
 
       </div>
