@@ -98,7 +98,7 @@ export default function News() {
             {
               newsInfo.slice(0, maxVisible).map((news, index) => (
                 <div key={index} className="flex flex-col gap-4">
-                  <Image src={news.image} alt={news.date} width={248} height={170} />
+                  <Image src={news.image} alt={news.date} width={248} height={170} placeholder="blur" />
                   <p className="text-main-navy text-lg font-extrabold">{news.date}</p>
                   <p className="text-main-gray text-[15px]">{news.description}</p>
                 </div>

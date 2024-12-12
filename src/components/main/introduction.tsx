@@ -6,7 +6,7 @@ import { nanumMyeongjo } from "~/app/fonts";
 export default function Introduction() {
   return (
 
-    <div className="w-full flex flex-col items-center gap-28">
+    <div id="about" className="w-full flex flex-col items-center gap-28">
       <Image src="/home/signature.png" alt="signature" width={1920} height={600} priority className="w-full max-w-[1920px] transform scale-[105%]" />
 
       <div className={`${nanumMyeongjo.className} text-main-gray relative`}>

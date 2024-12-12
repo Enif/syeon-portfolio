@@ -28,7 +28,7 @@ const projects: Project[] = [{
   authors: <>Kwangyoung Lee, <strong>Sooyeon Ahn</strong>, Jong-ok Hong, Jaehyun Lim, Namgoo Park, Uichin Lee, Hwajung Hong</>,
   description: "MThe fast-paced and demanding nature of call center work prevents ability from recognizing worker's emotional states. In this study, we developed MindBattery, a smartphone application designed to support the emotional well-being by using a battery analogy to help call center workers gauge their emotional energy depletion and provide a set of microbreaks for emotional recovery.",
   attachment: "/home/projects/mindbattery.pdf",
-  link: <>Link to <ExternalLink href="https://www.youtube.com/watch?v=mELfwn39ws0">Video</ExternalLink></>
+  link: <></>
 }, {
   image: "/home/projects/mindterior_thumbnail.jpg",
   title: "MindTerior",
@@ -54,12 +54,12 @@ const projects: Project[] = [{
   attachment: "/home/projects/mindroom.pdf",
   link: <>Link to <ExternalLink href="https://mind-room.syeon.studio/">Mind-room</ExternalLink>, <ExternalLink href="https://www.red-dot.org/project/mind-room-61156">Red Dot 2022</ExternalLink></>
 }, {
-  image: "/home/projects/forethestarved_thumbnail.jpg",
+  image: "/home/projects/forthestarved_thumbnail.jpg",
   title: "For the STARved",
   date: "(2021)",
   authors: <><strong>Sooyeon Ahn</strong>, Youngjae Kim, Doeun Kim, Seojin Park, Seungyun Oh, Minha Kang, Wootae Kim</>,
   description: "For the STARved is an astrophotography exhibition held in an online 3D virtual space. It allows	people starved of stars due to the pandemic to freely explore beautiful and fantastic galleries and watch astrophotographs taken by club members.",
-  attachment: "/home/projects/forethestarved.pdf",
+  attachment: "/home/projects/forthestarved.pdf",
   link: <>Link to <ExternalLink href="https://exhibition39.snuaaa.net/">For the STARved</ExternalLink>, <ExternalLink href="https://www.red-dot.org/ko/project/for-the-starved-61090">Red Dot 2022</ExternalLink>, <ExternalLink href="https://www.youtube.com/watch?v=fyozL9qou4w">Video</ExternalLink></>
 }]
 
@@ -87,7 +87,7 @@ export default function Projects() {
                 </div>
               </div>
               <div className="shrink-0">
-                <Image src={project.image} alt={project.title} width={515} height={350} className="object-cover" />
+                <Image src={project.image} alt={project.title} width={515} height={350} className="object-cover" placeholder="blur" />
               </div>
             </div>
           ))
