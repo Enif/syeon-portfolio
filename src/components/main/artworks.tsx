@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Modal from "~/components/modal";
 import ArtworkDetail, { ArtworkDetailType } from "./artworkDetail";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 
 type Artwork = {
@@ -198,7 +199,12 @@ export default function Artworks() {
                 <h3 className="text-[2rem] font-extrabold">{artwork.title}</h3>
                 {artwork.authors && <p className="text-xs">{artwork.authors}</p>}
                 <p className="text-[15px] text-center whitespace-pre-wrap">{artwork.description}</p>
-                <button className="py-2 px-4 rounded-3xl border border-white" onClick={() => setDetails(artwork.details)}>+ View Details</button>
+                <button
+                  className="py-2 px-4 rounded-3xl border border-white"
+                  onClick={() => {
+                    setDetails(artwork.details);
+                    sendGTMEvent({ event: 'buttonClicked', value: artwork.title, type: 'artwork' });
+                  }}>+ View Details</button>
                 {details && (<Modal>
                   <div className="flex flex-col gap-6">
                     <button className="flex items-center gap-2 ml-auto font-bold text-main-gray text-2xl" onClick={() => setDetails(null)}><Image src='/home/icons/close.svg' width={20} height={20} alt="close_icon" />Close</button>

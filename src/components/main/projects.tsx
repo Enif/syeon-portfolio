@@ -1,3 +1,4 @@
+import { sendGTMEvent } from "@next/third-parties/google";
 import Image from "next/image";
 import Link from "next/link";
 import { ReactElement } from "react";
@@ -80,7 +81,13 @@ export default function Projects() {
                 <p className="text-xs">{project.authors}</p>
                 <p className="text-[15px] text-justify">{project.description}</p>
                 <div className="flex justify-between">
-                  <Link target="_blank" href={project.attachment} className="text-main-navy font-bold">+ View Details</Link>
+                  <Link
+                    target="_blank"
+                    href={project.attachment}
+                    className="text-main-navy font-bold"
+                    onClick={() => {
+                      sendGTMEvent({ event: 'buttonClicked', value: project.title, type: 'project' });
+                    }}>+ View Details</Link>
                   <p className="font-bold text-main-gray100">
                     {project.link}
                   </p>
