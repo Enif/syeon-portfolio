@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { nanumSquare } from "~/app/fonts";
-import Head from "next/head";
 import { GoogleTagManager } from '@next/third-parties/google'
 
 
@@ -19,9 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <GoogleTagManager gtmId={GTM_ID} />
-      </Head>
+      <GoogleTagManager gtmId={GTM_ID} />
       <body
         className={`${nanumSquare.className} antialiased bg-white`}
       >
