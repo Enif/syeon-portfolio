@@ -37,9 +37,9 @@ export default function Introduction() {
           I worked with <ExternalLink href="https://galaxytourist.notion.site/Hwajung-Hong-cc10b0291bbe4ca38dbf4882cd687423">Prof. Hwajung Hong</ExternalLink> in <ExternalLink href="https://dxd-lab.github.io/">DxD Lab</ExternalLink>.
         </p>
 
-        <div className="flex gap-3">
-          <a href="mailto:syeon.studio@gmail.com" className="flex items-center"><Image src='/home/icons/mail.svg' alt="mail" width={30} height={30} /></a>
-          <button><Image src='/home/icons/cv.svg' alt="cv" width={30} height={30} /></button>
+        <div className="flex gap-3 items-center">
+          <a href="mailto:syeon.studio@gmail.com"><Image src='/home/icons/mail.svg' alt="mail" width={30} height={30} /></a>
+          <a target="_blank" href="/home/CV_2024_SooyeonAhn.pdf"><Image src='/home/icons/cv.svg' alt="cv" width={30} height={30} /></a>
           <ExternalLink href="https://www.instagram.com/syeon.artist/"><Image src='/home/icons/sns.svg' alt="sns" width={30} height={30} /></ExternalLink>
         </div>
 
