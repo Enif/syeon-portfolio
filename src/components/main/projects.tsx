@@ -1,3 +1,5 @@
+"use client"
+
 import { sendGTMEvent } from "@next/third-parties/google";
 import Image from "next/image";
 import Link from "next/link";
