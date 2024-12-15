@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import Title from "./title";
 
 type NewsInfo = {
   date: string;
@@ -92,22 +93,25 @@ export default function News() {
   return (
     <>
       <div id="about" className="flex justify-center mb-10">
-        <div className="w-[1052px]">
-          <h2 className="text-main-navy text-3xl mb-10 font-extrabold tracking-widest">NEWS</h2>
-          <div className="grid grid-cols-4 gap-5 gap-y-8">
+        <div className="w-full lg:w-[1052px] flex flex-col gap-10 px-8 md:px-0">
+          <Title title="NEWS" />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-5 gap-y-8">
             {
               newsInfo.slice(0, maxVisible).map((news, index) => (
-                <div key={index} className="flex flex-col gap-4">
+                <div key={index} className="flex flex-col gap-2 md:gap-4">
                   <Image src={news.image} alt={news.date} width={248} height={170} />
-                  <p className="text-main-navy text-lg font-extrabold">{news.date}</p>
-                  <p className="text-main-gray text-[15px]">{news.description}</p>
+                  <p className="text-main-navy text-[13px] md:text-lg font-extrabold">{news.date}</p>
+                  <p className="text-main-gray text-[11px] md:text-[15px]">{news.description}</p>
                 </div>
               ))
             }
-            {
-              maxVisible < newsInfo.length && <button onClick={() => setMaxVisible(maxVisible + STEP_COUNT)} className="col-span-4 text-main-navy text-lg leading-5 font-extrabold">+<br />More</button>
-            }
           </div>
+          {
+            maxVisible < newsInfo.length &&
+            <div className="flex justify-center">
+              <button onClick={() => setMaxVisible(maxVisible + STEP_COUNT)} className="text-main-navy text-[14px] md:text-lg leading-5 font-extrabold">+<br />More</button>
+            </div>
+          }
         </div>
       </div>
     </>

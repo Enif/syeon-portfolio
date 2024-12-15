@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="w-full flex flex-col gap-32 pt-32">
+      <div className="w-full flex flex-col gap-10 md:gap-32 pt-20 md:pt-32">
         <Introduction />
         <Image src="/home/divider.png" alt="divider" width={1350} height={60} className="mb-10" />
         <News />

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ReactElement } from "react";
 import ExternalLink from "~/components/externalLink";
+import Title from "./title";
 
 type Project = {
   image: string;
@@ -70,11 +71,14 @@ const projects: Project[] = [{
 export default function Projects() {
   return (
     <div id="projects" className="flex justify-center">
-      <div className="w-[1052px]">
-        <h2 className="text-main-navy text-3xl mb-10 font-extrabold tracking-widest">Projects</h2>
+      <div className="w-full lg:w-[1052px] flex flex-col gap-10">
+        <Title title="PROJECTS" className="px-8 md:px-0" />
         {
           projects.map((project) => (
-            <div key={project.title} className="flex gap-5 mb-10 even:flex-row-reverse">
+            <div key={project.title} className="flex flex-col md:flex-row gap-5 mb-10 md:odd:flex-row-reverse">
+              <div className="shrink-0">
+                <Image src={project.image} alt={project.title} width={515} height={350} className="object-cover" />
+              </div>
               <div className="flex flex-col gap-2 px-6 justify-center text-main-gray">
                 <div className="flex gap-[10px] items-center">
                   <h3 className="text-xl font-extrabold">{project.title}</h3>
@@ -94,9 +98,6 @@ export default function Projects() {
                     {project.link}
                   </p>
                 </div>
-              </div>
-              <div className="shrink-0">
-                <Image src={project.image} alt={project.title} width={515} height={350} className="object-cover" />
               </div>
             </div>
           ))

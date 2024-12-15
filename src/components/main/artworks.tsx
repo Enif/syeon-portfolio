@@ -5,6 +5,7 @@ import { useState } from "react";
 import Modal from "~/components/modal";
 import ArtworkDetail, { ArtworkDetailType } from "./artworkDetail";
 import { sendGTMEvent } from "@next/third-parties/google";
+import Title from "./title";
 
 
 type Artwork = {
@@ -190,15 +191,15 @@ export default function Artworks() {
   return (
     <div id="artworks" className="flex justify-center">
       <div className="w-[1052px] flex flex-col gap-10">
-        <h2 className="text-main-navy text-3xl font-extrabold tracking-widest">ARTWORKS</h2>
+        <Title title="ARTWORKS" className="px-8 md:px-0" />
         {
           artworks.map((artwork) => (
             <div key={artwork.title} className="relative group">
-              <Image src={artwork.mainImage} width={1052} height={450} alt={artwork.title} />
-              <div className="absolute inset-0 flex flex-col justify-center items-center gap-4 px-28 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white">
-                <h3 className="text-[2rem] font-extrabold">{artwork.title}</h3>
+              <Image src={artwork.mainImage} width={1052} height={450} alt={artwork.title} className="h-[390px] md:h-auto object-cover" />
+              <div className="absolute inset-0 flex flex-col justify-center items-center gap-4 px-3 md:px-28 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white">
+                <h3 className="text-2xl md:text-[2rem] font-extrabold">{artwork.title}</h3>
                 {artwork.authors && <p className="text-xs">{artwork.authors}</p>}
-                <p className="text-[15px] text-center whitespace-pre-wrap">{artwork.description}</p>
+                <p className="text-[10px] md:text-[15px] text-center whitespace-normal md:whitespace-pre-wrap">{artwork.description}</p>
                 <button
                   className="py-2 px-4 rounded-3xl border border-white"
                   onClick={() => {
