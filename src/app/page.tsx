@@ -13,15 +13,15 @@ export default function Home() {
       <Header />
       <div className="w-full flex flex-col gap-10 md:gap-32 pt-20 md:pt-32">
         <Introduction />
-        <Image src="/home/divider.png" alt="divider" width={1350} height={60} className="mb-10" />
+        <Image src="/home/divider.png" alt="divider" width={1350} height={60} className="mb-10 w-60 md:w-[1350px]" />
         <News />
         <div className="flex w-full">
-          <Image src="/home/divider.png" alt="divider" width={1350} height={60} className="ml-auto" />
+          <Image src="/home/divider.png" alt="divider" width={1350} height={60} className="ml-auto w-60 md:w-[1350px]" />
         </div>
         <Projects />
         <Artworks />
         <div className="flex w-full justify-center mt-10">
-          <Image src="/home/divider_center.png" alt="divider" width={1350} height={60} />
+          <Image src="/home/divider_center.png" alt="divider" width={1350} height={60} className="w-60 md:w-[1350px]" />
         </div>
         <Contact />
         <Footer />

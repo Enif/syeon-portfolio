@@ -86,15 +86,15 @@ export default function Projects() {
                 </div>
                 <p className="text-xs">{project.authors}</p>
                 <p className="text-[15px] text-justify">{project.description}</p>
-                <div className="flex justify-between">
+                <div className="flex flex-col-reverse gap-2 md:flex-row md:justify-between">
                   <Link
                     target="_blank"
                     href={project.attachment}
-                    className="text-main-navy font-bold"
+                    className="text-main-navy font-bold text-sm md:text-base"
                     onClick={() => {
                       sendGTMEvent({ event: 'buttonClicked', value: project.title, type: 'project' });
                     }}>+ View Details</Link>
-                  <p className="font-bold text-main-gray100">
+                  <p className="font-bold text-main-gray100 text-sm md:text-base">
                     {project.link}
                   </p>
                 </div>

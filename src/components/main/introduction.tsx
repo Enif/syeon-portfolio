@@ -24,7 +24,7 @@ export default function Introduction() {
       <Image src="/home/profile.png" alt="profile" width={288} height={288} priority className="w-[150px] h-[150px] md:w-[288px] md:h-[288px]" />
 
       <div className="w-full lg:w-[1320px] px-7 md:px-0 flex flex-col gap-11">
-        <p className=" text-main-gray text-sm md:text-lg font-bold">
+        <p className=" text-main-gray text-sm md:text-lg font-bold text-justify">
           I am Sooyeon Ahn, a designer, interdisciplinary researcher, and artist who loves to explore new knowledge and technologies.
           My goal is to help people live better lives by supporting human cognitive development with science and technology,
           with a strong emphasis on a human-centered design approach. In particular, I have explored how digital interactions
