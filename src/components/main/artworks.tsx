@@ -7,9 +7,13 @@ import ArtworkDetail, { ArtworkDetailType } from "./artworkDetail";
 import { sendGTMEvent } from "@next/third-parties/google";
 import Title from "./title";
 
+type ArtworkThumbnail = {
+  type: 'image' | 'video';
+  src: string;
+}
 
 type Artwork = {
-  mainImage: string;
+  thumbnail: ArtworkThumbnail;
   title: string;
   authors?: string;
   description: string;
@@ -17,7 +21,7 @@ type Artwork = {
 }
 
 const artworks: Artwork[] = [{
-  mainImage: "/home/artworks/meta-gaia.jpg",
+  thumbnail: { type: 'image', src: "/home/artworks/meta-gaia.jpg" },
   title: "Meta-Gaia",
   authors: "(Group Project) Sooyeon Ahn, Minsun Kim, Geunyong Park, Stella Yolanda",
   description: `“Gaia, the first god who created the world, was followed by humans as Meta-Gaia.
@@ -26,14 +30,14 @@ const artworks: Artwork[] = [{
                 It gracefully immerses viewers in a meditative and thought-provoking experience.`,
   details: [{ type: 'video', src: 'https://www.youtube.com/embed/_T8dzd3eagU?si=gi-uX96dY9ggQnDS&amp;controls=0', alt: 'Meta-Gaia Video' }],
 }, {
-  mainImage: "/home/artworks/boundary.jpg",
+  thumbnail: { type: 'video', src: "/home/artworks/boundary.mp4" },
   title: "Boundary Project",
   description: `My self had separated into two distinct selves: the outer self and the inner self.
                 The Boundary Project is the process of accepting both divided selves as part of me
                 and eventually integrating them into one.`,
   details: [{
     type: 'video',
-    src: 'https://www.youtube.com/embed/kBk8lsMYHSE?si=_orlbUPE83O8FgHH',
+    src: 'https://www.youtube.com/embed/9PfgRfaf7Js?si=u6rIvz39JvJRfD2h',
     alt: 'Boundary Detail 1'
   }, {
     type: 'image',
@@ -54,7 +58,7 @@ const artworks: Artwork[] = [{
   }],
 
 }, {
-  mainImage: "/home/artworks/inner_garden.jpg",
+  thumbnail: { type: 'image', src: "/home/artworks/inner_garden.jpg" },
   title: "Inner Garden Project",
   description: `Inner Garden Project is the process of recognizing my hidden dark shadows.
                 The ‘Inner Garden’ is an inner cozy space where I am able to meet my own inner self.
@@ -82,7 +86,7 @@ const artworks: Artwork[] = [{
     alt: 'Inner Garden Detail 5'
   }],
 }, {
-  mainImage: "/home/artworks/remember.jpg",
+  thumbnail: { type: 'video', src: "/home/artworks/remember.mp4" },
   title: "Remember Project",
   description: `My grandfather had suffered from a loss of memory.
                 At his last moment, I was afraid of forgetting about him forever if I didn’t leave him in the picture.
@@ -123,7 +127,7 @@ const artworks: Artwork[] = [{
   }],
 
 }, {
-  mainImage: "/home/artworks/the_gap.jpg",
+  thumbnail: { type: 'video', src: "/home/artworks/the_gap.mp4" },
   title: "The Gap",
   description: `No matter how we try to reach each other, there is an unreachable gap between us. 
                 My closest others(friends and family) and I stand face to face, and there is a thin, white fabric between us.
@@ -159,7 +163,7 @@ const artworks: Artwork[] = [{
     alt: 'The Gap Detail 7'
   }],
 }, {
-  mainImage: '/home/artworks/not_to_be_erased.jpg',
+  thumbnail: { type: 'image', src: '/home/artworks/not_to_be_erased.jpg' },
   title: 'Not to be Erased',
   description: `In the history of the war, there are countless people who were disappeared under the shadow of the hero.
                   History do not record them even if each of them has their own valuable and precious.
@@ -195,7 +199,11 @@ export default function Artworks() {
         {
           artworks.map((artwork) => (
             <div key={artwork.title} className="relative group">
-              <Image src={artwork.mainImage} width={1052} height={450} alt={artwork.title} className="h-[390px] md:h-auto object-cover" />
+              {
+                artwork.thumbnail.type === 'video' ?
+                  <video src={artwork.thumbnail.src} className="h-[390px] md:h-auto object-cover" autoPlay loop muted playsInline /> :
+                  <Image src={artwork.thumbnail.src} width={1052} height={450} alt={artwork.title} className="h-[390px] md:h-auto object-cover" />
+              }
               <div className="absolute inset-0 flex flex-col justify-center items-center gap-4 px-3 md:px-28 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white">
                 <h3 className="text-2xl md:text-[2rem] font-extrabold">{artwork.title}</h3>
                 {artwork.authors && <p className="text-xs">{artwork.authors}</p>}
