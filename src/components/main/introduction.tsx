@@ -7,7 +7,7 @@ export default function Introduction() {
   return (
 
     <div id="about" className="w-full flex flex-col items-center gap-14 md:gap-28">
-      <Image src="/home/signature.png" alt="signature" width={1920} height={600} priority className="w-full max-w-[1920px] transform scale-[105%]" />
+      <Image src="/home/signature.png" alt="signature" width={1920} height={600} priority className="w-full max-w-[1920px] transform lg:scale-[105%]" />
 
       <div className={`${nanumMyeongjo.className} text-main-gray relative`}>
         <Image src='/home/icons/left_double_quotation.svg' alt="left_double_quotation" width={18} height={18} className="absolute left-0 md:-left-8 top-0 w-3 h-3 md:w-[18px] md:h-[18px] text-red-50" />
