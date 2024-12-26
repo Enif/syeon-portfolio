@@ -77,7 +77,15 @@ export default function Projects() {
           projects.map((project) => (
             <div key={project.title} className="flex flex-col md:flex-row gap-5 mb-10 md:odd:flex-row-reverse">
               <div className="shrink-0">
-                <Image src={project.image} alt={project.title} width={515} height={350} className="object-cover" />
+                <Link
+                  target="_blank"
+                  href={project.attachment}
+                  onClick={() => {
+                    sendGTMEvent({ event: 'buttonClicked', value: project.title, type: 'project' });
+                  }}
+                >
+                  <Image src={project.image} alt={project.title} width={515} height={350} className="object-cover" />
+                </Link>
               </div>
               <div className="flex flex-col gap-2 px-6 justify-center text-main-gray">
                 <div className="flex gap-[10px] items-center">
