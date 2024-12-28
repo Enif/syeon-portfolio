@@ -84,6 +84,14 @@ const artworks: Artwork[] = [{
     type: 'image',
     src: '/home/artworks/inner_garden_detail_5.jpg',
     alt: 'Inner Garden Detail 5'
+  }, {
+    type: 'image',
+    src: '/home/artworks/inner_garden_detail_6.jpg',
+    alt: 'Inner Garden Detail 6'
+  }, {
+    type: 'image',
+    src: '/home/artworks/inner_garden_detail_7.jpg',
+    alt: 'Inner Garden Detail 7'
   }],
 }, {
   thumbnail: { type: 'video', src: "/home/artworks/remember.mp4" },
