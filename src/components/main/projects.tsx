@@ -56,7 +56,7 @@ const projects: Project[] = [{
   authors: <><strong>Sooyeon Ahn</strong>, Youngjae Kim, Minha Kang</>,
   description: "Mind-room is an online test designed to increase people's awareness of their emotional state. It analyzes each user's emotional state based on how they react to various situations during a virtual journey, then suggests an emotionally calming room designed based on various theories such as color psychology and art therapy.",
   attachment: "/home/projects/mindroom.pdf",
-  link: <>Link to <ExternalLink href="https://mind-room.syeon.studio/">Mind-room</ExternalLink>, <ExternalLink href="https://www.red-dot.org/project/mind-room-61156">Red Dot 2022</ExternalLink></>
+  link: <>Link to <ExternalLink href="https://mind-room.syeon.studio/">Mind-room</ExternalLink>, <ExternalLink href="https://www.red-dot.org/project/mind-room-61156">Red Dot</ExternalLink></>
 }, {
   image: "/home/projects/forthestarved_thumbnail.jpg",
   title: "For the STARved",
@@ -64,7 +64,7 @@ const projects: Project[] = [{
   authors: <><strong>Sooyeon Ahn</strong>, Youngjae Kim, Doeun Kim, Seojin Park, Seungyun Oh, Minha Kang, Wootae Kim</>,
   description: "For the STARved is an astrophotography exhibition held in an online 3D virtual space. It allows	people starved of stars due to the pandemic to freely explore beautiful and fantastic galleries and watch astrophotographs taken by club members.",
   attachment: "/home/projects/forthestarved.pdf",
-  link: <>Link to <ExternalLink href="https://exhibition39.snuaaa.net/">For the STARved</ExternalLink>, <ExternalLink href="https://www.red-dot.org/ko/project/for-the-starved-61090">Red Dot 2022</ExternalLink>, <ExternalLink href="https://www.youtube.com/watch?v=fyozL9qou4w">Video</ExternalLink></>
+  link: <>Link to <ExternalLink href="https://exhibition39.snuaaa.net/">For the STARved</ExternalLink>, <ExternalLink href="https://www.red-dot.org/ko/project/for-the-starved-61090">Red Dot</ExternalLink>, <ExternalLink href="https://www.youtube.com/watch?v=fyozL9qou4w">Video</ExternalLink></>
 }]
 
 
@@ -87,7 +87,7 @@ export default function Projects() {
                   <Image src={project.image} alt={project.title} width={515} height={350} className="object-cover" />
                 </Link>
               </div>
-              <div className="flex flex-col gap-2 px-6 justify-center text-main-gray">
+              <div className="flex flex-col gap-4 px-6 justify-center text-main-gray">
                 <div className="flex gap-[10px] items-center">
                   <h3 className="text-xl font-extrabold">{project.title}</h3>
                   <p className="">{project.date}</p>
@@ -98,7 +98,7 @@ export default function Projects() {
                   <Link
                     target="_blank"
                     href={project.attachment}
-                    className="text-main-navy font-bold text-sm md:text-base border border-solid border-main-navy py-2 px-4 rounded-3xl w-fit"
+                    className="text-main-navy font-bold text-sm md:text-base border border-solid border-main-navy py-1 px-2 rounded-3xl w-fit"
                     onClick={() => {
                       sendGTMEvent({ event: 'buttonClicked', value: project.title, type: 'project' });
                     }}>+ View Details</Link>
