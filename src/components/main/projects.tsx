@@ -24,7 +24,7 @@ const projects: Project[] = [{
   authors: <><strong>Sooyeon Ahn</strong>, Eunmi Kim, Hwajung Hong</>,
   description: "EE-Scape is a VR mindfulness application that alleviates impulsive eating triggered by emotional 	reasons. Our preliminary studies indicated that most emotional eaters reflect some meanings to the food(e.g., a friend comforting me). To deal with these emotional bonds, EE-SScape provides a novel	virtual food experience that allows users to perceive the food differently and reflect on their	emotional eating habits.",
   attachment: "/home/projects/eescape.pdf",
-  link: <>Link to <ExternalLink href="https://www.youtube.com/watch?v=mELfwn39ws0">Video</ExternalLink></>
+  link: <>Link to <ExternalLink href="https://www.youtube.com/watch?v=_VKN_LqIiSg">Video</ExternalLink></>
 }, {
   image: "/home/projects/mindbattery_thumbnail.jpg",
   title: "MindBattery",
