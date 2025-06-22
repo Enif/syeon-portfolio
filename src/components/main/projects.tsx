@@ -47,7 +47,7 @@ const projects: Project[] = [{
   date: "(2021-2022)",
   authors: <><strong>Sooyeon Ahn</strong>, Heeyoung Beak, Gill Son, Dongbum Kim</>,
   description: "OWN is a 3D virtual space that elaborately visualizes the abstract and invisible inner world. It was dedicatedly tailor-designed for just one person(OWNer) through in-depth psychological analysis. The psychologists suggest various therapeutic elements, which the designer visualizes as space in the virtual world. OWN 	comprises synaesthetic elements based on color psychology, environmental psychology, and art therapy to help calm the mind.",
-  attachment: "/home/projects/own.pdf",
+  attachment: "https://doi.org/10.1145/3698061.3726951",
   link: <>Link to <ExternalLink href="https://www.youtube.com/watch?v=E8U6nVeSfrU">Video</ExternalLink></>
 }, {
   image: "/home/projects/mindroom_thumbnail.jpg",

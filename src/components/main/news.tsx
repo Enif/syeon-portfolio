@@ -11,6 +11,14 @@ type NewsInfo = {
 }
 
 const newsInfo: NewsInfo[] = [{
+  date: "March, 2025",
+  image: "/home/news/Mar_2025_pictorial.png",
+  description: "C&C 2025 Pictorial accepted🎉"
+}, {
+  date: "January, 2025",
+  image: "/home/news/Jan_2025_ailikeme.png",
+  description: "Sooyeon joined Ailike.ME as a Product Designer"
+}, {
   date: "December, 2024",
   image: "/home/news/Dec_2024_exhibition.jpg",
   description: "Sooyeon participated in exhibition ‘Crossing Over: Innovation and Boundaries’ at Ground Seoul"
