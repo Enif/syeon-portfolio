@@ -39,8 +39,9 @@ export default function Introduction() {
 
         <div className="flex gap-3 items-center">
           <a href="mailto:syeon.studio@gmail.com"><Image src='/home/icons/mail.svg' alt="mail" width={30} height={30} /></a>
-          <a target="_blank" href="/home/CV_2024_SooyeonAhn.pdf"><Image src='/home/icons/cv.svg' alt="cv" width={30} height={30} /></a>
+          <ExternalLink href="https://www.linkedin.com/in/syeon-studio/"><Image src='/home/icons/lindin.svg' alt="sns" width={30} height={30} /></ExternalLink>
           <ExternalLink href="https://www.instagram.com/syeon.artist/"><Image src='/home/icons/sns.svg' alt="sns" width={30} height={30} /></ExternalLink>
+          <ExternalLink href="https://docs.google.com/document/d/1meHxDNIfDQCKbME7GyJ3NO-iSiob5UONCfAd6OTYYGs/edit?usp=sharing"><Image src='/home/icons/cv.svg' alt="cv" width={30} height={30} /></ExternalLink>
         </div>
 
       </div>
