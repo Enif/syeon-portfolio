@@ -11,6 +11,10 @@ type NewsInfo = {
 }
 
 const newsInfo: NewsInfo[] = [{
+  date: "June, 2025",
+  image: "/home/news/Jun_2025_pictorial.png",
+  description: "Our pictorial 'Designing OWN' received the BP Honorable Mention at C&C 2025👏"
+}, {
   date: "March, 2025",
   image: "/home/news/Mar_2025_pictorial.png",
   description: "C&C 2025 Pictorial accepted🎉"
