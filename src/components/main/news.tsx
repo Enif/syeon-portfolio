@@ -11,6 +11,10 @@ type NewsInfo = {
 }
 
 const newsInfo: NewsInfo[] = [{
+  date: "September, 2025",
+  image: "/home/news/Sep_2025_CSRC.jpg",
+  description: "Sooyeon joined Computer Science Research Centre in RCA"
+}, {
   date: "June, 2025",
   image: "/home/news/Jun_2025_pictorial.png",
   description: "Our pictorial 'Designing OWN' received the BP Honorable Mention at C&C 2025👏"
