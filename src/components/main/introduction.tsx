@@ -34,11 +34,7 @@ export default function Introduction() {
           <br />
           I am currently a PhD student at the <ExternalLink href="https://www.rca.ac.uk/csrc">Computer Science Research Centre</ExternalLink>, <ExternalLink href="https://www.rca.ac.uk/">Royal College of Art (RCA)</ExternalLink>,
           under the supervision of Professor <ExternalLink href="https://www.linkedin.com/in/asadipour">Ali Asadipour</ExternalLink> and <ExternalLink href="https://www.linkedin.com/in/chang-hee-lee-6a219789">Chang Hee Lee</ExternalLink>.
-          <br />
-          <br />
-          I earned B.F.A in Painting and Media Art from <ExternalLink href="https://en.snu.ac.kr/index.html">Seoul National University</ExternalLink>, South Korea,
-          and M.S. in Industrial Design from <ExternalLink href="https://www.kaist.ac.kr/en/">Korea Advanced Institute of Science and Technology (KAIST)</ExternalLink>, South Korea. During the Master&apos;s program,
-          I worked with <ExternalLink href="https://galaxytourist.notion.site/Hwajung-Hong-cc10b0291bbe4ca38dbf4882cd687423">Prof. Hwajung Hong</ExternalLink> in <ExternalLink href="https://dxd-lab.github.io/">DxD Lab</ExternalLink>.
+          
         </p>
 
         <div className="flex gap-3 items-center">
